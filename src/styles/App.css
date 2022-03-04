@@ -1,23 +1,90 @@
-.App {
+html {
+  background-color: rgba(1, 146, 66, 0.377);
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+}
+
+.App .header {
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .container {
+  padding: 0 !important;
+  margin: 0 auto;
+}
+.App .container .editor {
+  margin: 0 auto;
+  text-align: center;
+}
+.App .container .editor textarea {
+  width: 90%;
+  min-width: 180px;
+  max-width: 360px;
+  min-height: 120px;
+  height: 180px;
+}
+.App .container .previewer {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+}
+.App .container .previewer .preview {
+  text-align: start;
+  background-color: #f0ffff;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px 5px;
+}
+.App .container .previewer .preview * {
+  margin: 5px 10px;
+}
+.App .container .previewer .preview a {
+  color: #135af5;
+  text-decoration: none;
+}
+.App .container .previewer .preview h1 {
+  border-bottom: 3px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview h2 {
+  border-bottom: 1.5px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview h3 {
+  border-bottom: 1px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview h4 {
+  border-bottom: 0.75px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview h5 {
+  border-bottom: 0.6px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview h6 {
+  border-bottom: 0.5px solid rgba(29, 29, 29, 0.884);
+}
+.App .container .previewer .preview code {
+  background-color: #bebdbd;
+  color: #0f0f0f;
+  padding: 2px;
+}
+.App .container .previewer .preview pre {
+  background-color: #bebdbd;
+  color: #0f0f0f;
+  padding: 2px;
+  line-height: 1.5;
+  letter-spacing: 1.1;
+}
+.App .container .previewer .preview pre code {
+  padding: 0;
+}
+.App .container .previewer .preview img {
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width: 1024px) {
+  .preview {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*# sourceMappingURL=App.css.map */
